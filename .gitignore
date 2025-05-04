@@ -1,0 +1,38 @@
+# Dotnet
+bin/
+obj/
+*.nuspec
+*.nupkg
+*.snupkg
+*.user
+*.suo
+*.userosscache
+*.sln.ide
+
+# Visual Studio Code
+.vscode/
+
+# Rider / ReSharper
+.idea/
+*.DotSettings.user
+*.dotsettings
+
+# Test Results
+TestResults/
+*.trx
+*.coverage
+coverage/
+
+# Secrets
+secrets.json
+
+# Logs
+*.log
+
+# Others
+*.tmp
+*.cache
+*.lock
+*.db
+.DS_Store
+Thumbs.db
