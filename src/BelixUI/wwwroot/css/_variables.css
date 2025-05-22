@@ -1,0 +1,9 @@
+:root {
+    --belix-palette-primary: #1976D2;
+    --belix-palette-secondary: #9C27B0;
+    --belix-palette-error: #D32F2F;
+    --belix-palette-warning: #EF6C00;
+    --belix-palette-info: #0288D1;
+    --belix-palette-success: #2E7D32;
+    --belix-palette-white: #FFFFFF;
+}

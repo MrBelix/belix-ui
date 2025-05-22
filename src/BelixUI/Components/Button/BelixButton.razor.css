@@ -1,0 +1,60 @@
+.belix-button {
+    border: none;
+    border-radius: 4px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.belix-button.filled {
+    color: var(--belix-palette-white);
+    background-color: var(--belix-button-main-color);
+}
+
+.belix-button.outlined {
+    color: var(--belix-button-main-color);
+    box-shadow: inset 0 0 0 1px color-mix(in srgb, currentColor 50%, white);
+    background-color: transparent;
+}
+
+.belix-button.text {
+    background-color: transparent;
+    color: var(--belix-button-main-color);
+}
+
+.belix-button.small {
+    padding: 4px 10px;
+    line-height: 22px;
+    font-size: 13px;
+}
+
+.belix-button.medium {
+    padding: 6px 16px;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.belix-button.large {
+    padding: 8px 22px;
+    line-height: 26px;
+    font-size: 15px;
+}
+
+.belix-button.primary {
+    --belix-button-main-color: var(--belix-palette-primary);
+}
+
+.belix-button.secondary {
+    --belix-button-main-color: var(--belix-palette-secondary);
+}
+
+.belix-button.error {
+    --belix-button-main-color: var(--belix-palette-error);
+}
+
+.belix-button.warning {
+    --belix-button-main-color: var(--belix-palette-warning);
+}
+
+.belix-button.info {
+    --belix-button-main-color: var(--belix-palette-info);
+}
