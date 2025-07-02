@@ -1,0 +1,40 @@
+# Build directories
+bin/
+obj/
+artifacts/
+
+# Publish output
+publish/
+out/
+
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider / IntelliJ IDEA
+.idea/                             # IDE project folder :contentReference[oaicite:0]{index=0}
+*.sln.iml                          # Solution module
+*.DotSettings.user                 # Rider project settings
+
+# Rider caches and user-specific files
+.idea
+
+# ReSharper (if you use it)
+_ReSharper*/
+*.DotSettings.user
+
+# Visual Studio Code
+.vscode/
+
+# NuGet packages and caches
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# User-specific and environment files
+*.env
+local.settings.json
