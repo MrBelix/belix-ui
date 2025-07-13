@@ -13,8 +13,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0112687F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Belix.UI.Tests", "tests\Belix.UI.Tests\Belix.UI.Tests.csproj", "{4624AC37-4CD4-42E5-9F78-96A341BD476C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp2", "src\BlazorApp2\BlazorApp2.csproj", "{AF57AABB-C4E6-483C-8E48-17ADC08B7412}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,7 +21,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{84B7D433-B783-4F85-BDCE-599E282C9161} = {E9C722F9-2B1A-4ED0-8E2C-722A9224410D}
 		{4624AC37-4CD4-42E5-9F78-96A341BD476C} = {0112687F-F9A7-472E-AF11-FD5984585A69}
-		{AF57AABB-C4E6-483C-8E48-17ADC08B7412} = {E9C722F9-2B1A-4ED0-8E2C-722A9224410D}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{84B7D433-B783-4F85-BDCE-599E282C9161}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -34,9 +31,5 @@ Global
 		{4624AC37-4CD4-42E5-9F78-96A341BD476C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4624AC37-4CD4-42E5-9F78-96A341BD476C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4624AC37-4CD4-42E5-9F78-96A341BD476C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AF57AABB-C4E6-483C-8E48-17ADC08B7412}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AF57AABB-C4E6-483C-8E48-17ADC08B7412}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AF57AABB-C4E6-483C-8E48-17ADC08B7412}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AF57AABB-C4E6-483C-8E48-17ADC08B7412}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
