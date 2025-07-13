@@ -4,6 +4,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E9C722F9-2B1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Belix.UI", "src\Belix.UI\Belix.UI.csproj", "{84B7D433-B783-4F85-BDCE-599E282C9161}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{88E1E149-CAFF-4FB3-AB5B-E53FA9DFF8DE}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0112687F-F9A7-472E-AF11-FD5984585A69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Belix.UI.Tests", "tests\Belix.UI.Tests\Belix.UI.Tests.csproj", "{4624AC37-4CD4-42E5-9F78-96A341BD476C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -11,11 +20,16 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{84B7D433-B783-4F85-BDCE-599E282C9161} = {E9C722F9-2B1A-4ED0-8E2C-722A9224410D}
+		{4624AC37-4CD4-42E5-9F78-96A341BD476C} = {0112687F-F9A7-472E-AF11-FD5984585A69}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{84B7D433-B783-4F85-BDCE-599E282C9161}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{84B7D433-B783-4F85-BDCE-599E282C9161}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84B7D433-B783-4F85-BDCE-599E282C9161}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84B7D433-B783-4F85-BDCE-599E282C9161}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4624AC37-4CD4-42E5-9F78-96A341BD476C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4624AC37-4CD4-42E5-9F78-96A341BD476C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4624AC37-4CD4-42E5-9F78-96A341BD476C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4624AC37-4CD4-42E5-9F78-96A341BD476C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
