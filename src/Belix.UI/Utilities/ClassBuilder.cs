@@ -1,39 +1,61 @@
 using System.Text;
 
-namespace Belix.UI.Utilities;
-
-public readonly record struct ClassBuilder
+namespace Belix.UI.Utilities
 {
-    private const char Separator = ' ';
-    private readonly StringBuilder _stringBuilder;
-
-    public ClassBuilder()
+    /// <summary>
+    /// Fluent CSS class builder using StringBuilder, safe for struct initialization.
+    /// </summary>
+    public readonly record struct ClassBuilder
     {
-        _stringBuilder = new StringBuilder();
-    }
+        private const char Separator = ' ';
+        private readonly StringBuilder _stringBuilder;
 
-    public ClassBuilder AddClass(string value)
-    {
-        if (!string.IsNullOrWhiteSpace(value))
+        /// <summary>
+        /// Creates an empty builder.
+        /// </summary>
+        public ClassBuilder()
         {
-            if (_stringBuilder.Length > 0)
-            {
-                _stringBuilder.Append(Separator);
-            }
-            _stringBuilder.Append(value.Trim());
+            _stringBuilder = new StringBuilder();
         }
 
-        return this;
+        /// <summary>
+        /// Creates a builder initialized with a starting value.
+        /// </summary>
+        public ClassBuilder(string? initial) : this()
+        {
+            if (!string.IsNullOrWhiteSpace(initial))
+            {
+                AddClass(initial);
+            }
+        }
+
+        /// <summary>
+        /// Appends a class name if non-empty, prefixing a separator if needed.
+        /// </summary>
+        public ClassBuilder AddClass(string value)
+        {
+            if (!string.IsNullOrWhiteSpace(value))
+            {
+                if (_stringBuilder.Length > 0)
+                {
+                    _stringBuilder.Append(Separator);
+                }
+                _stringBuilder.Append(value.Trim());
+            }
+            return this;
+        }
+
+        /// <summary>
+        /// Conditionally appends a class name.
+        /// </summary>
+        public ClassBuilder AddClass(string value, bool condition)
+            => condition ? AddClass(value) : this;
+
+        /// <summary>
+        /// Returns the combined class string.
+        /// </summary>
+        public string Build() => _stringBuilder?.ToString() ?? string.Empty;
+
+        public override string ToString() => Build();
     }
-
-    public ClassBuilder AddClass(string value, bool condition) => condition
-        ? AddClass(value)
-        : this;
-
-    public string Build()
-    {
-        return _stringBuilder.ToString();
-    }
-
-    public override string ToString() => Build();
 }
